@@ -1,0 +1,22 @@
+body{
+	background-color:#9ACD32;
+	text-align: center;
+	font-weight: 800;
+	background-image:url(../imagens/images.jpg);
+	background-size: 130%;
+	background-repeat: no-repeat;
+}
+h1{
+	color: green;
+	}
+h2{
+	color:blue;
+}
+p{
+	color: white;
+}
+
+.img{
+	width:200px ;
+	height:200px; 
+}
