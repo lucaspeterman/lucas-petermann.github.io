@@ -1,30 +1,280 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta charset="utf-8"><!-- Para funfar os acentos -->
+	<title>Planetas do Sistema Solar</title>
+
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Luckiest+Guy" rel="stylesheet">
+
+	<style type="text/css">
+		body{
+			background-color:;
+			color: whitesmoke;
+		}
+		#sol{
+			width: 100%;/*Largura Responsiva*/
+			height: 100%;
+			position: fixed;
+			top: 0; left: 0;
+			z-index: -1;
+			opacity: 19;			
+		}
+
+		h1{
+			font-family: 'Luckiest Guy', cursive;
+			font-size: 3em;
+		}
+		h2{
+			font-family: 'Fredoka One', cursive;
+			font-size: 2em;
+		}
+
+		.redonda{
+			width: 300px;
+			height: 300px;
+			border-radius: 50%; /*arredonda a borda*/
+			border: 5px solid white;
+
+			/*Para centralizar imagem*/
+			display: block;
+			margin: 20px auto; 
+		}
+		
+		.seta{
+			font-size: 400%;
+			text-align: center;
+		}
+
+		.seta a{
+			text-decoration: none;
+		}
+
+		#soltabela{
+			width: 60px
+		}
+
+		#mercurio{
+			width: 60px
+		}
+
+
+	    #sol2{
+	    	background-color: orange;
+	    }
+
+	    #jupiter{background-color:grey;
+
+	    }
+
+	    #saturno{background-color:brown;
+
+	    }
+
+	    #urano{background-color:blue;
+
+	    }
+
+	    #netuno{background-color:blue;
+
+	    }
+
+	    #terra{background-color:green;
+
+	    }
+
+	    #venus{background-color:grey;
+
+	    }
+
+	    #marte{background-color:red;
+
+	    }
+
+	    #mercurio{background-color:brown;
+
+	    }
+	    /*OL intendificada com #menu*/
+	    ol#menu{
+	    	list-style-type:none;
+	    	width: 1000px;
+	    	position: fixed;
+	    	margin-left: 50%;/*emburrando*/
+	    	left:-500px;/*puchando*/
+	    	top:-20px;
+
+	    }
+	    /*li filho de #menu*/
+	    #menu li{
+	    	float: left;
+	    	background-color: black;
+	    	border-right: 2px solid black
+	    }
+	    #menu li a{
+	    	text-decoration: none;/*tira o sublinhado do link*/
+	    	padding:  20px 20px;
+	    	display: block; 
+	    	color: white;
+	    		    }
+
+	    #menu li:hover{
+	    	background-color: green;
+	    }
+	    .vocêestaaqui{
+	    	background-color: blue;
+
+	    }
+	    h1{
+	    	clear: both;}
+	    	#sistemasolar{
+	    		margin-top: 100px
+	    	}
+
+      	</style>
+
 </head>
 <body>
-	<h1>Aula Khan Academy</h1>
-	<h2>Mentalidade de Crescimento</h2>
-	<p>Ao final da aula, quero que meus alunos consigam entender  um pouco mais sobre mentalidade de crescimento</p>
-	<h2>O QUE É MENTALIDADE DE CRESCIMÉNTO</h2>
-	<p>A mentalidade de crescimento é o pensamento de  que nosso cérebro e habilidades não são fixos e podem melhorar com a prática certa.
-	<p>A mentalidade de crescimento ajuda a nos concentrarmos no processo de aprendizagem e prática.
-	<p>Mesmo se não atingirmos a meta final, ainda seremos vencedores, porque é o processo que faz o cérebro crescer.</p>
-	<img src="imagens/mente.jpg">
-	<iframe width="200" height="200" src="https://www.youtube.com/embed/vHJPa3DgLOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <ol id="menu">
+   	<li><a class="vocêestaaqui"
+   		href="sol.html">sol</a></li>
+   	<li><a href="mercurio.html">Mercúrio</a></li> <!-- indentação -->
+		<li><a href="vênus.html">Vênus</a></li>
+		<li><a href="terra.html">Terra</a></li>
+		<li><a href="marte.html">Marte</a></li>
+		<li><a href="jupiter.html">Júpiter</a></li>
+		<li><a href="saturno.html">Saturno</a></li>
+		<li><a href="urano.html">Urano</a></li>
+		<li><a href="netuno.html">Netuno</a></li> 
+	</ol>
+
+		<img id="sol" src="http://www.dominiosfantasticos.com.br/beautygalax.gif" alt="" />
+
+	<h1 id="sistemasolar">Sistema Solar</h1>
+
+ 	<ol><!-- Lista Ordenada -->
+		<li><a href="#mercurio">Mercúrio</a></li> <!-- indentação -->
+		<li><a href="#venus">Vênus</a></li>
+		<li><a href="#terra">Terra</a></li>
+		<li><a href="#marte">Marte</a></li>
+		<li><a href="#jupiter">Júpiter</a></li>
+		<li><a href="#saturno">Saturno</a></li>
+		<li><a href="#urano">Urano</a></li>
+		<li><a href="#netuno">Netuno</a></li> 
+	</ol>
+	<h2> Tabela planeta</h2>
+
+    <table border="10">
+  <tr>
+    <th>Corpo</th>
+    <th>Imagem</th> 
+    <th>Raio Médio (km)</th>
+    <th>Volume (x10<sup>9</sup>km<sup>3</sup>) </th>
+    <th> Massa (x10<sup>21</sup>Kg)</th>
+  </tr>
+  <tr id="sol2" >
+    <td>Sol</td>
+    <td><img src="imagens/sol.png" alt="" id="soltabela"/></td>
+    <td>696,000</td>
+    <td>1,412,000,000</td>
+    <td>1,989,100,000</td>
+  </tr>
+  <tr id="jupiter">
+    <td>Júpiter</td>
+    <td><img src="imagens/jupiter.png" alt=""/></td>
+    <td>69,911</td>
+    <td>1,431,280</td>
+    <td>1,898,600</td>
+  </tr>
+  <tr id="saturno">
+    <td>Saturno</td>
+    <td><img src="imagens/saturno.png" alt=""/></td>
+    <td>58,232</td>
+    <td>827,130</td>
+    <td>568,460</td>
+
+  </tr>
+  <tr id="urano">
+  	<td>Urano</td>
+  	<td><img src="imagens/urano.png" alt=""/></td>
+  	<td>25,362</td>
+  	<td>68,340</td>
+  	<td>86,833</td>
+  </tr>
+  <tr id="netuno">
+  	<td>Netuno</td>
+  	<td><img src="imagens/netuno.png" alt=""/></td>
+  	<td>24,622</td>
+  	<td>62,540</td>
+  	<td>102,430</td>
+  </tr>
+<tr id="terra">
+	<td>Terra</td>
+	<td><img src="imagens/terra.png" alt=""/></td>
+	<td>6,371.0</td>
+	<td>1,083.21</td>
+	<td>5,973.6</td>
+</tr>
+<tr id="venus">
+	<td>Vênus</td>
+	<td><img src="imagens/venus.png" alt=""/></td>
+	<td>6,051.8</td>
+	<td>928,43</td>
+	<td>4,868.5</td>
+</tr>
+<tr id="marte">
+	<td>Marte</td>
+	<td><img src="imagens/marte.png" alt=""/></td>
+	<td>3,390.0</td>
+	<td>163,18</td>
+	<td>641,85</td>
+</tr>
+<tr id="mercurio">
+	<td>Mercurio</td>
+	<td><img src="imagens/mercurio.jpg" alt="" id="mercurio" /></td>
+	<td>2,440</td>
+	<td>6,083</td>
+	<td>3,3011</td>
+</tr>
 
 
-	<H2>NO QUE A MÉNTALIDADE DE CRESCIMENTO PODE SE PENÉFICA</H2>
-	<p>A mentalidade de crescimento pode ser benéfica de modo que nos propicia evoluir o nosso cérebro para que possamos crescer mentalmente e poder amadurecer.
-	</p>
-	<img class="img" src="imagens/errar.jpg">
-	<iframe width="200" height="200" src="https://www.youtube.com/embed/hPDGoEpLecs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-	<H2>PORQUE ERRAR PODE SER BOM ?</H2>
-	<P>Tomar uma decisão errada faz parte da vida, tanto no trabalho como na vida pessoal. Mas todo mundo merece uma segunda chance, concorda? Até porque ninguém nasceu sabendo, principalmente quando se está começando um novo trabalho ou uma nova carreira. Errar faz parte do processo de aprender e empreender. </P>
+
+
+</table>
+
+	
+
+	<h2 id="mercurio">Mercúrio</h2> <!-- indentação -->
+	<img src="imagens/mercurio.jpg" alt="" class="redonda">
+	
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+	<h2 id="venus">Vênus</h2>
+	<img class="redonda" src="imagens/venus.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+	<h2 id="terra">Terra</h2>
+	<img class="redonda" src="imagens/terra.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+	<h2 id="marte">Marte</h2>
+	<img class="redonda" src="imagens/marte.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+	
+	<h2 id="jupiter">Júpiter</h2>
+	<img class="redonda" src="imagens/jupiter.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+	
+	<h2 id="saturno">Saturno</h2>
+	<img class="redonda" src="imagens/saturno.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+	
+	<h2 id="urano">Urano</h2>
+	<img class="redonda" src="imagens/urano.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+	<h2 id="netuno">Netuno</h2>
+	<img class="redonda" src="imagens/netuno.jpg" alt=""> 
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
 
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mercurio</title>
+</head>
+<style type="text/css">
+ #mercurio{
+ 	width: 240px
+ }	
+
+#mer{
+			width: 100%;/*Largura Responsiva*/
+			height: 100%;
+			position: fixed;
+			top: 0; left: 0;
+			z-index: -1;
+			opacity: 0.8;	}		
+
+p{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+
+			}	
+
+			.redonda{
+			width: 30px;
+			height: 160px;
+			border-radius: 5%; /*arredonda a borda*/
+			border: 5px solid white;}
+
+
+
+
+			ol#menu{
+	    	list-style-type:none;
+	    	width: 1000px;
+	    	position: fixed;
+	    	margin-left: 50%;/*emburrando*/
+	    	left:-500px;/*puchando*/
+	    	top:-20px;
+
+	    }
+	    /*li filho de #menu*/
+	    #menu li{
+	    	float: left;
+	    	background-color: black;
+	    	border-right: 2px solid black
+	    }
+	    #menu li a{
+	    	text-decoration: none;/*tira o sublinhado do link*/
+	    	padding:  20px 20px;
+	    	display: block; 
+	    	color: white;
+	    		    }
+
+	    #menu li:hover{
+	    	background-color: green;
+	    }
+	    .vocêestaaqui{
+	    	background-color: blue;
+
+	    }
+	    h1{
+	    	clear: both;}
+	    	#sistemasolar{
+	    		margin-top: 100px
+	    	}	
+
+
+</style>
+<body>
+<ol id="menu">
+		<li><a href="index.html">Inicio</a></li>
+   		<li><a href="sol.html">sol</a></li>
+   		<li><a href="mercurio.html">Mercúrio</a></li> <!-- indentação -->
+		<li><a href="vênus.html">Vênus</a></li>
+		<li><a href="terra.html">Terra</a></li>
+		<li><a href="marte.html">Marte</a></li>
+		<li><a href="jupiter.html">Júpiter</a></li>
+		<li><a href="saturno.html">Saturno</a></li>
+		<li><a href="urano.html">Urano</a></li>
+		<li><a href="netuno.html">Netuno</a></li> 
+	</ol>
+
+
+<h1>Mercurio</h1>
+<img class="redonda" id="mercurio" src="imagens/mercurio.jpg">
+<img id="mer" src="https://acegif.com/wp-content/uploads/mercury.gif">
+ <h2>Curiosidades</h2>
+ <p>Mercúrio é o menor e mais interno planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre todos os planetas do Sistema Solar. </p>
+
+
+</body>
+</html>
