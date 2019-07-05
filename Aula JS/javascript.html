@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello javascript World</title>
+    <style>
+        body{
+            background-color:greenyellow;
+            color :firebrick;
+            }
+      
+    </style>
+</head>
+<body>
+   
+<script>
+    //Comentariode uma linha
+    /*comentário de multiplas linhas*/
+    console.log("Alo Ha Mundo Javascript");
+    //Abra uma janela e exibe o conteudo
+    alert("Saudades do Sublime");
+    //garante q so srra executado após carregar todos elementoa HTML
+    window.onload = function(){ document.querySelector("h1").textContent = "JS é Massa";
+    
+   //elemento HTML em uma variavel javgascript
+   var paçoca = document.querySelector("h1");
+   paçoca.innerHTML = "<em>JS</em> não é java!";
+   paçoca.style = "font-size: 50px; \
+                   color: deepSkyBlue;"//Saudades
+    //variavel moderna lodal
+    let h1_2= document.querySelector(".segundoH1");
+    let h1_3= document.querySelector("#terceiroH1");
+
+    h1_2.style = "font-size: 10px";
+    h1_3.style = "text-shadow:3px 3px 5px black";
+    let h_uns = document.querySelectorAll("h1");
+
+    for(let i=0; i < h_uns.length; i++)
+    h_uns[i].style = "border: 2px dashed white";
+    }
+    //JS Variables
+    //https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1
+
+    
+
+
+</script>
+    <h1>introdução á liguagem javascript</h1> 
+    <h1 class="segundoH1">segundo H1</h1>
+    <h1 id="terceiroH1">Tersiro H1</h1>
+
+<div style="text-align: center;background-color: white;"
+    <h2>Exemplo da lâmpada</h2>
+    <button onclick="document.querySelector('#lâmpada').src= 'acesa.gif'">Acender</button>
+    <img src = "apagada.gif" id="lâmpada" 
+    onmouseover="acender()"onmouseover="apagar()">
+    <button onclick="document.querySelector('#lâmpada').src= 'apagada.gif'">Apagar</button>
+</div>
+
+<script>
+    let lâmpada = document.querySelector("lâmpada");
+    function acender(){lâmpada.src = "acesa.gif"}
+    function apagar(){lâmpada.src = "apagada.gif"}
+</script>
+
+
+</body>
+</html>
